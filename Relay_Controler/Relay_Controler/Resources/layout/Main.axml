@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFB404">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/space1" />
+    <TextView
+        android:text="1DOF"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:id="@+id/textView1" />
+    <ToggleButton
+        android:text="Connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#FFF"
+        android:background="#ed8404"
+        android:textOn="Connected"
+        android:textOff="Connect"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/space2" />
+    <ToggleButton
+        android:text="READ DATA FROM DEVICE"
+        android:id="@+id/toggleButton2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:background="#ed8404"
+        android:textOff="READ DATA FROM DEVICE"
+        android:textOn="WRITE DATA TO DEVICE" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/space3" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:weightSum="2"
+            android:layout_marginRight="2dp">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Relay 1"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="0"
+                android:id="@+id/checkBox1"
+                android:textAlignment="center" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="12:00"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="1"
+                android:id="@+id/editText1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:textAlignment="center"
+                android:layout_marginTop="1.5dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="13:00"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="2"
+                android:id="@+id/editText2"
+                android:textAlignment="center" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:weightSum="2">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Relay 2"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="0"
+                android:id="@+id/checkBox2" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="12:00"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="1"
+                android:id="@+id/editText3"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="12:00"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="2"
+                android:id="@+id/editText4" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:weightSum="2">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Relay 3"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="0"
+                android:id="@+id/checkBox3" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="12:00"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="1"
+                android:id="@+id/editText5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="12:00"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="2"
+                android:id="@+id/editText6" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:weightSum="2">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Relay 4"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="0"
+                android:id="@+id/checkBox4" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="12:00"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="1"
+                android:id="@+id/editText7"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="12:00"
+                android:textColor="#FFF"
+                android:background="#ed8404"
+                android:layout_column="2"
+                android:id="@+id/editText8" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/space3" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/space3" />
+        <ToggleButton
+            android:text="Relay1 On"
+            android:id="@+id/toggleButton3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#ed8404"
+            android:textOff="RELAY1 ON"
+            android:textOn="RELAY1 OFF" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/space3" />
+        <ToggleButton
+            android:text="Relay2 On"
+            android:id="@+id/toggleButton4"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#ed8404"
+            android:textOff="RELAY2 ON"
+            android:textOn="RELAY2 OFF" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/space3" />
+        <ToggleButton
+            android:text="Relay3 On"
+            android:id="@+id/toggleButton5"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#ed8404"
+            android:textOff="RELAY3 ON"
+            android:textOn="RELAY3 OFF" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/space3" />
+        <ToggleButton
+            android:text="Relay4 On"
+            android:id="@+id/toggleButton6"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#ed8404"
+            android:textOff="RELAY4 ON"
+            android:textOn="RELAY4 OFF" />
+    </LinearLayout>
+</LinearLayout>
